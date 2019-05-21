@@ -1,0 +1,87 @@
+.blog {
+    background: $blog-bg;
+
+    .text {
+        text-align: center;
+    }
+
+    .blog__grid {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: $width-md) {
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+    }
+
+    .main__link {
+        background-color: $blog-bt;
+    }
+}
+
+.tile {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    height: 300px;
+    padding: 20px;
+    margin: 0 15px;
+    background-size: cover;
+
+    @media (max-width: $width-md) {
+        margin-bottom: 15px;
+    }
+
+    &__date {
+        margin: 20px;
+        width: 3.75rem;
+        height: 3.88rem;
+        font: 700 30px $font;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin: 0 15px;
+        background: rgba(87, 92, 102, .4);
+
+        .date__text {
+            font-size: 21px;
+            font-weight: 700;
+        }
+    }
+
+    &__header {
+        font: 700 20px $font;
+        color: #fff;
+    }
+
+    &__info {
+        padding-top: 20px;
+        font: 300 14px $font;
+    }
+
+}
+
+.first-slide {
+    background: url('../images/slider/1.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.second-slide {
+    background: url('../images/slider/2.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.third-slide {
+    background: url('../images/slider/3.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.fourth-slide {
+    background: url('../images/slider/2.jpg') no-repeat center center;
+}

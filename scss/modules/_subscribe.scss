@@ -1,0 +1,59 @@
+.subccribe {
+    background: url('../images/sub-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    
+    &__wrapper{
+        padding: 0 15px;
+    }
+    .text {
+        padding: 0 0 30px 0;
+        color: #000;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .text__main {
+        padding: 0 0 30px 0;
+    }
+
+    .main__form {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .main__form {
+        @media (max-width: $width-md) {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .field__item{
+                width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .field__item {
+        width: calc(100% - 215px);
+        height: 3.44rem;
+        line-height: 3.44rem;
+        font-size: 1.5rem;
+        border: 1px solid #000;
+        padding-left: 15px;
+
+    }
+
+    .main__link {
+        background-color: $subscribe-bt;
+    }
+}

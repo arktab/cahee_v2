@@ -1,0 +1,66 @@
+.gallery {
+    background-color: $gallery-bg;
+
+    .text {
+        color: #000;
+        text-align: center;
+    }
+
+    .grid {
+        margin: 50px auto 100px;
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one" "two" "three" "four" "five";
+
+        @media (min-width: $width-lg) {
+            grid-template-rows: 30% 30% 40%;
+            grid-template-columns: 30% 20% 20% 30%;
+            grid-template-areas:
+                "one one one two "
+                "one one one three"
+                "four four five five";
+        }
+
+
+        &__item {
+            object-fit: cover;
+            overflow: hidden;
+
+            .img {
+                max-width: none;
+                min-width: auto;
+                height: 100%;
+            }
+        }
+    }
+
+    .one {
+        grid-area: one;
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+
+    .five {
+        grid-area: five;
+    }
+
+    .button__wrap {
+        .main__link {
+            color: #fff;
+            background-color: $gallery-bt;
+        }
+    }
+
+}

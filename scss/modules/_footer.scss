@@ -1,0 +1,32 @@
+.footer{
+	width: 100%;
+	background: $footer-bg;
+	
+	.footer__wraper{
+		text-align: center;
+		-webkit-align-content: center;
+		        align-content: center;
+		font: 15px $font; 
+		color: #fff;
+		    
+		.footer__copyright{
+			 padding: 40px 0 0 ;
+		}
+
+		.footer__logo{
+			padding: 25px 0 0 ;
+			font: 25px $font-logo;
+            .footer__link{
+                color: #fff;
+                text-decoration: none;
+            }
+		}
+
+		.footer__desc{
+			padding: 40px 0 0 ;
+			.red{
+				color: red;
+			}
+		}
+	}
+}
